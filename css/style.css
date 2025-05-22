@@ -9,180 +9,208 @@
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
   }
-  
+
   /* 공통 레이아웃 컨테이너 */
   .container {
     width: 90%;
+    margin: 41px auto 200px auto;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  /* 헤더 */
-  header {
-    background-color: #fff;
-    padding: 15px 0;
-  }
-  
-  /* 로고 */
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .logo img.logo-img {
-    height: 40px;
-    display: block;
-    object-fit: contain;
-  }
-  
-  /* 메뉴 */
-  .menu a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .menu a:hover {
-    color: #0077cc;
-  }
-  
-  /* 소셜 아이콘 */
-  .social a {
-    margin-left: 10px;
-    color: #333;
-    font-size: 1.2rem;
-  }
-  
-  .social a:hover {
-    color: #0077cc;
-  }
-  
-  /* 인트로 섹션 */
-  .intro {
-    width: 80%;
-    max-width: 1150px;
-    margin: 60px auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  /* 인트로 텍스트 */
-  .intro-text {
-    flex: 1;
-  }
-  
-  .intro-text h1 {
-    font-size: 40px;  /* 기존보다 크게 */
-    margin: 10px 0;
-    line-height: 1.5;
-    color: #42446E;  /* 기본 텍스트 색상 */
-  }
-  
-  /* 인트로 이미지 */
-  .intro-image {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .intro-image img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 20px; /* 원형: 50% */
-    object-fit: cover;
-  }
-  
-  .highlight-name {
-    color: #805ECF;
-  }
 
+  .logo-img {
+    width: 97px;
+    height: 59px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-left: 306px;
+  }
+  
+  .menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #A7A7A7;
+  }
+  
+  .social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 43px;
+  }
+  
+  .social-icon {
+    height: 30px;
+    width: auto;
+  }
+  
+  /* 전체 인트로 섹션 설정 */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;         /* Figma 기준 너비 */
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 0px 200px;        /* 좌우 여백 */
+  box-sizing: border-box;
+}
+
+/* 텍스트 영역 설정 */
+.intro-text {
+  flex: 1;
+  margin-left: 70px;
+}
+
+/* 텍스트 스타일 */
+.intro-text h1 {
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 70px;
+  letter-spacing: -1px;
+  color: #42446E;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+/* 일반 텍스트 색상 */
+.text-normal {
+  color: #42446E;
+}
+
+/* 강조 이름 텍스트 */
+.highlight-name {
+  color: #805ECF;
+}
+
+/* 이미지 영역 */
+.intro-image {
+  flex: 1;
+  margin-left: auto; 
+  text-align: right;
+}
+
+/* 이미지 스타일 */
+.intro-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+
+
+  /* tech stack */
   .tech-stack {
     text-align: center;
     margin: 60px auto;
-    max-width: 800px;
+    max-width: 1280px;
     padding: 0 20px;
+    margin-top: 300px;
   }
   
   .tech-title {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 48px;
     color: #42446E; /* 기존 느낌과 어울리게 */
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    line-height: 26px;
   }
   
   .tech-subtitle {
-    font-weight: 300; /* 얇은 글씨 */
-    font-size: 1.2rem;
-    color: #42446E;
-    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 32px;
+    color: #666666;
+    margin-bottom: 138px;
+    line-height: 26px;
   }
-  
+
   .tech-images {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 120px); /* 6개의 열, 각 120px */
+    grid-auto-rows: auto;
+    justify-content: center; /* 전체 그리드를 가운데 정렬 */
+    column-gap: 96px; /* 좌우 간격 */
+    row-gap: 40px;    /* 상하 간격 */
+    margin: 0 auto;
   }
   
   .tech-icon {
-    width: 1000px;
-    height: 350px;
+    width: 120px;
+    height: auto;
     object-fit: contain;
   }
   
+  /* 마지막 열에서는 margin-right 제거 */
+  .tech-images img:nth-child(6),
+  .tech-images img:nth-child(12) {
+    margin-right: 0;
+  }
+
   section {
     margin-top: 500px;  /* 섹션 간 간격 넉넉하게 */
   }
   
 
+  
+
   .projects {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 300px;
     margin-bottom: 150px;
   }
   
   .projects-title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     color: #42446E;
-    margin-bottom: 10px;
+    margin-bottom: 49px;
+    font-family: Poppins;
+    line-height: 26px;
+    text-align: center;
   }
   
   .projects-subtitle {
-    font-size: 20px;
-    font-weight: 300;
-    color: #666;
-    margin-bottom: 40px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0px;
+    /* dark content */
+    color: #666666;
+    margin-bottom: 80px;
   }
   
   .project-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3열 */
-    gap: 30px;
-    max-width: 1140px;  /* 카드 360px * 3 + gap 포함 */
-    margin: 0 auto;     /* 가운데 정렬 */
-    padding: 0 20px;    /* 양쪽 여백 (선택사항) */
+    grid-template-columns: repeat(3, 1fr);  /* 3열 */
+    column-gap: 30px;   /* 좌우 간격 */
+    row-gap: 40px;      /* 상하 간격 */
+    max-width: 1170px;  /* 카드 360px * 3 + column-gap 30px * 2 = 1170px */
+    margin: 0 auto;     /* 전체 가운데 정렬 */
+    padding: 0 20px;    /* 반응형 여유 (선택사항) */
   }
   
   .project-thumbnail {
-    width: 360px;
+    width: 376px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 20px 20px 0px 0px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
-  
+
+
 
   footer {
     background-color: #fff;
@@ -196,6 +224,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 200px;
     padding: 20px 0;
   }
   
@@ -212,7 +241,7 @@
   
   .contact-info {
     display: flex;
-    gap: 20px; /* 전화번호와 이메일 사이 간격 */
+    gap: 169px; /* 전화번호와 이메일 사이 간격 */
   }
   
   .contact-text {
