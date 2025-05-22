@@ -1,103 +1,252 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{007} pavanmg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>개발 강아지 사랑</title>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-        <a href="#" class="logo">
-            <img src="img/logo 1.svg" alt="{007} pavanmg Logo" class="logo-img">
-        </a>
-
-        <nav class="menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Tech Stack</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </nav>
-
-        <div class="social">
-          <a href="https://github.com/Jixoo-IT" target="_blank"><img src="img/Vector.svg" alt="GitHub" class="social-icon"></a><a href="https://x.com/?lang=ko" target="_blank"><img src="img/ant-design_twitter-circle-filled.svg" alt="Twitter" class="social-icon"></a><a href="https://linkedin.com" target="_blank"><img src="img/entypo-social_linkedin-with-circle.svg" alt="LinkedIn" class="social-icon"></a>
-        </div>
-      
+  <!-- navigation -->
+  <nav class="top-nav">
+    <img class="top-logo" src="./images/icons/logo.png" alt="logo" />
+    <!-- 메뉴 아이템 -->
+    <ul class="nav-items">
+      <li>Home</li>
+      <li>About</li>
+      <li>Tech Stack</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+    <!-- SNS Link -->
+    <div class="top-sns">
+      <a href="#"><img src="./images/icons/github.svg" alt="github" /></a>
+      <a href="#"><img src="./images/icons/twitter.svg" alt="twitter" /></a>
+      <a href="#"><img src="./images/icons/linkedin.svg" alt="linkedin" /></a>
     </div>
+  </nav>
+  <!-- 헤더 : 내소개 -->
+  <header>
+    <h1>Hi 👋,<br />
+      제 이름은 <span>사랑이</span>에요!<br />
+      저는 웹 개발을 잘해요!</h1>
+    <img class="gelatine" src="./images/profile 2.png" alt="profile" />
   </header>
 
-  <section class="intro">
-    <div class="intro-text">
-      <h1>
-        <span class="text-normal">Hi 👋,</span><br>
-        <span class="text-normal">제 이름은 <span class="highlight-name">사랑이</span>에요!</span><br>
-        <span class="text-normal">저는 산책을 잘해요!</span>
-      </h1>
+  <!-- 기술 스택 섹션 -->
+  <section id="tech-stack">
+    <div class="section-text">
+      <h2>My Tech Stack</h2>
+      <p>Technologies I’ve been working with recently</p>
     </div>
-    <div class="intro-image"> 
-      <img src="img/profile 2.png" alt="Profile Image">
+    <ul class="tech-stacks">
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-1.svg" alt="html" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-2.svg" alt="css" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-3.svg" alt="js" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-4.svg" alt="react" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-5.svg" alt="tech" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-6.svg" alt="boostrap" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-7.svg" alt="tailwindcss" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-8.svg" alt="sass" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-9.svg" alt="git" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-10.svg" alt="greenstock" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-11.svg" alt="vs code" />
+      </li>
+      <li>
+        <img src="./images/icons/tech-stacks/tech-stack-12.svg" alt="github" />
+      </li>
+    </ul>
+  </section>
+
+    
+  <!-- 프로젝트 섹션 -->
+  <section id="project-section">
+    <div class="section-text">
+      <h2>Projects</h2>
+      <p>Things I’ve built so far</p>
+    </div>
+    <div class="project-items">
+      <!-- 프로젝트 1-->
+      <article class="project-item">
+        <div class="project-thumbnail"></div>
+        <div class="project-content">
+          <h4>소중한 멍멍 프로젝트</h4>
+          <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+          <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+          <!-- 바로가기 링크 -->
+          <div class="project-link">
+            <a href="#">
+              <img src="./images/icons/link-chain.svg">
+              <div>Notion</div>
+            </a>
+            <a href="#">
+              <img src="./images/icons/github-fill.svg">
+              <div>View Code</div>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- 프로젝트 2 -->
+      <article class="project-item">
+        <div class="project-thumbnail"></div>
+        <div class="project-content">
+          <h4>소중한 멍멍 프로젝트</h4>
+          <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+          <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+          <!-- 바로가기 링크 -->
+          <div class="project-link">
+            <a href="#">
+              <img src="./images/icons/link-chain.svg">
+              <div>Notion</div>
+            </a>
+            <a href="#">
+              <img src="./images/icons/github-fill.svg">
+              <div>View Code</div>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- 프로젝트 3 -->
+      <article class="project-item">
+        <div class="project-thumbnail"></div>
+        <div class="project-content">
+          <h4>소중한 멍멍 프로젝트</h4>
+          <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+          <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+          <!-- 바로가기 링크 -->
+          <div class="project-link">
+            <a href="#">
+              <img src="./images/icons/link-chain.svg">
+              <div>Notion</div>
+            </a>
+            <a href="#">
+              <img src="./images/icons/github-fill.svg">
+              <div>View Code</div>
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+
+      <!-- 프로젝트 4 -->
+      <article class="project-item">
+        <div class="project-thumbnail"></div>
+        <div class="project-content">
+          <h4>소중한 멍멍 프로젝트</h4>
+          <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+          <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+          <!-- 바로가기 링크 -->
+          <div class="project-link">
+            <a href="#">
+              <img src="./images/icons/link-chain.svg">
+              <div>Notion</div>
+            </a>
+            <a href="#">
+              <img src="./images/icons/github-fill.svg">
+              <div>View Code</div>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- 프로젝트 5 -->
+      <article class="project-item">
+        <div class="project-thumbnail"></div>
+        <div class="project-content">
+          <h4>소중한 멍멍 프로젝트</h4>
+          <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+          <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+          <!-- 바로가기 링크 -->
+          <div class="project-link">
+            <a href="#">
+              <img src="./images/icons/link-chain.svg">
+              <div>Notion</div>
+            </a>
+            <a href="#">
+              <img src="./images/icons/github-fill.svg">
+              <div>View Code</div>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- 프로젝트 6 -->
+      <article class="project-item">
+        <div class="project-thumbnail"></div>
+        <div class="project-content">
+          <h4>소중한 멍멍 프로젝트</h4>
+          <p class="project-desc">강아지도 멍권이 있다고 주장하고 싶은 강아지들을 위한 커뮤니티</p>
+          <div class="project-tech-stack">기술스택: React, Webapp, Github, AWS S3</div>
+          <!-- 바로가기 링크 -->
+          <div class="project-link">
+            <a href="#">
+              <img src="./images/icons/link-chain.svg">
+              <div>Notion</div>
+            </a>
+            <a href="#">
+              <img src="./images/icons/github-fill.svg">
+              <div>View Code</div>
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section class="tech-stack">
-    <h2 class="tech-title">My Tech Stack</h2>
-    <h2 class="tech-subtitle"> Technologies I’ve been working with recently</h2>
-    <div class="tech-images">
-      <img src="img/vscode-icons_file-type-html.svg" alt="HTML5" class="tech-icon">
-      <img src="img/vscode-icons_file-type-css.svg" alt="CSS3" class="tech-icon">
-      <img src="img/vscode-icons_file-type-js-official.svg" alt="JavaScript" class="tech-icon">
-      <img src="img/logos_react.svg" alt="React" class="tech-icon">
-      <img src="img/Vector (1).svg" alt="=Vector(1)" class="tech-icon">
-      <img src="img/logos_bootstrap.svg" alt="bootstrap" class="tech-icon">
-      <img src="img/vscode-icons_file-type-tailwind.svg" alt="tailwind" class="tech-icon">
-      <img src="img/logos_sass.svg" alt="Sass" class="tech-icon">
-      <img src="img/logos_git-icon.svg" alt="Git" class="tech-icon">
-      <img src="img/cib_greensock.svg" alt="Greensock" class="tech-icon">
-      <img src="img/vscode-icons_file-type-vscode.svg" alt="Vscode" class="tech-icon">
-      <img src="img/akar-icons_github-fill.svg" alt="github" class="tech-icon">
+  
+  <!-- footer -->
+  <footer>
+    <div class="footer-upper">
+      <!-- 로고 -->
+      <img class="footer-logo" src=" ./images/icons/logo.png" alt="logo" />
+      <!-- 이메일/연락처/SNS -->
+      <div class="footer-content">
+        <div class="footer-contact">
+          <a class="tel" href="tel:+1234567890">010-1234-5678</a>
+          <a class="email" href="mailto:cookie00421@gmail.com">cookie00421@gmail.com</a>
+          <div class="footer-links">
+            <a href="https://github.com/Jixoo-IT" target="_blank">
+              <img src="./images/icons/github.svg" alt="github" />
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <img src="./images/icons/linkedin.svg" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-
-
-  <section class="projects">
-    <h2 class="projects-title">Projects</h2>
-    <h2 class="projects-subtitle">Things I’ve built so far</h2>
-    <div class="project-list">
-      <img src="img/card.png" alt="Project 1" class="project-thumbnail">
-      <img src="img/card.png" alt="Project 2" class="project-thumbnail">
-      <img src="img/card.png" alt="Project 3" class="project-thumbnail">
-      <img src="img/card.png" alt="Project 4" class="project-thumbnail">
-      <img src="img/card.png" alt="Project 5" class="project-thumbnail">
-      <img src="img/card.png" alt="Project 6" class="project-thumbnail">
+    <!-- 가로 선 -->
+    <div class="hr"></div>
+    <div class="madeby">
+      Designed and built <span class="br"></span>by Pavan <span>MG</span>
+      with <span>Love</span> & <span>Coffee</span>
+      &copy; 2024
     </div>
-  </section>
-  <script src="js/main.js"></script>
+  </footer>
 </body>
+
 </html>
-
-
-<footer>
-    <div class="container footer-container">
-      <div class="footer-left">
-        <img src="img/logo 2.svg" alt="Footer Logo" class="footer-logo">
-      </div>
-      <div class="footer-right">
-        <div class="contact-info">
-          <p class="contact-text">+91 12345 09876</p>
-          <p class="contact-text">info@example.com</p>
-        </div>
-        <div class="social">
-          <a href="https://github.com/Jixoo-IT" target="_blank"><img src="img/Vector.svg" alt="GitHub" class="social-icon"></a><a href="https://x.com/?lang=ko" target="_blank"><img src="img/ant-design_twitter-circle-filled.svg" alt="Twitter" class="social-icon"></a><a href="https://linkedin.com" target="_blank"><img src="img/entypo-social_linkedin-with-circle.svg" alt="LinkedIn" class="social-icon"></a>
-        </div>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <hr>
-      <p>Designed and built by Pavan MG with Love & Coffee</p>
-    </div>
-</footer>
-  
